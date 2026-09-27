@@ -16,7 +16,9 @@ git clone https://github.com/sakethrambilla/skills.git ~/skills
 | `~/.claude/skills` | Claude Code |
 | `~/.agents/skills` | Codex, Cursor |
 
-Because the skills are symlinks, `git pull` updates them in every tool. If a real directory with the same name already exists, the script skips it. Remove that directory and run the script again.
+On Windows, run the script from Git Bash. It creates directory junctions instead of symlinks, because Windows symlinks need Developer Mode.
+
+Because the skills are links, `git pull` updates them in every tool. If a real directory with the same name already exists, the script skips it. Remove that directory and run the script again.
 
 ### Cursor
 
